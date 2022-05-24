@@ -1,0 +1,16 @@
+schema {
+ query: Query
+}
+
+type Query {
+    allSuperheroes: [Superhero]
+    singleSuperHero(id : String) : Superhero
+}
+
+type Superhero {
+    id: String
+    name: String,
+    characterName: String,
+    powers: [String],
+    firstAppearance: String
+}
